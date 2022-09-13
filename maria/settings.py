@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+from ast import Import
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-x@ejm0c(ka3k5mg*p0aj^l(fayu%zu_t6855xdnob*b-qei#$)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mystunningapp.herokuapp.com']
 
 
 # Application definition
@@ -149,6 +150,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'qammarsahu@gmail.com'
 EMAIL_HOST_PASSWORD = 'jlxypnxjjvkcrmxt'
+
 
 
 # Default primary key field type
