@@ -1,4 +1,5 @@
-from os import STATIC_ROOT
+import os
+
 import django_heroku
 
 """
