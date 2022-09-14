@@ -1,1 +1,1 @@
-web: gunicorn mystunningapp.wsgi
+web: gunicorn maria.wsgi
