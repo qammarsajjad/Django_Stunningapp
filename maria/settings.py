@@ -1,6 +1,5 @@
 import os
 
-import django_heroku
 
 """
 Django settings for maria project.
@@ -162,4 +161,4 @@ EMAIL_HOST_PASSWORD = 'jlxypnxjjvkcrmxt'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
+
