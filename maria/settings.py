@@ -28,7 +28,8 @@ SECRET_KEY = '757e584c5dc5d1369f351b631c607dbf192718ac6cfcfa53'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ '127.0.0.1'
+    'mystunningapp.herokuapp.com']
 
 
 # Application definition
