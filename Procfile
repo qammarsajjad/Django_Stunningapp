@@ -1,1 +1,1 @@
-web: gunicorn maria.wsgi
+web: gunicorn maria.wsgi--log-file -
