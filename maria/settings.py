@@ -1,7 +1,7 @@
 import os
 import django_on_heroku
 import dj_database_url
-
+from importlib import reload
 
 """
 Django settings for maria project.
