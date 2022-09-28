@@ -1,1 +1,1 @@
-web: gunicorn maria.wsgi
+web: waitress-serve --listen=*:8000 maria.wsgi:application
