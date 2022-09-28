@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '757e584c5dc5d1369f351b631c607dbf192718ac6cfcfa53'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [ '127.0.0.1',
     'mystunningapp.herokuapp.com']

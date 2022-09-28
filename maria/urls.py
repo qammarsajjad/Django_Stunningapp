@@ -19,6 +19,7 @@ from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
+from django.contrib import url,serve
 
 
 
@@ -35,6 +36,8 @@ urlpatterns = [
     path('',include('janu.urls')),
     path('__debug__/', include('debug_toolbar.urls')),
 
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
 
 if settings.DEBUG:
