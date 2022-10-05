@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8000 maria.wsgi:application
+web:  waitress-serve --port=8000 maria.wsgi:application
