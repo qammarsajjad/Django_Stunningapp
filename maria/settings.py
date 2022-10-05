@@ -1,5 +1,6 @@
 import os
 import django_on_heroku
+from decouple import config
 
 
 """
@@ -24,8 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "8dddfe48d1693b0eacbcb00fb2999be5d157cdcc4873d30b"
+# SECURITY WARNING: keep KEY'the secret key used in production secret!
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -157,8 +158,8 @@ EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'qammarsahu@gmail.com'
-EMAIL_HOST_PASSWORD = 'jlxypnxjjvkcrmxt'
+EMAIL_HOST_USER = config('EMAIL_HOST')
+EMAIL_HOST_PASSWORD =config('EMAIL_PASS')
 
 
 
