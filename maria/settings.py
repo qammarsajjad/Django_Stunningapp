@@ -1,6 +1,8 @@
 import os
 #import django_on_heroku
 from decouple import config
+import django_heroku
+
 
 
 """
@@ -170,7 +172,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-
+django_heroku.settings(locals())
 #django_on_heroku.settings(locals())
 
 
